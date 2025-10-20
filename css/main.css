@@ -109,12 +109,25 @@ footer {
     padding-right: 20px;
 }
 
-.campos input {
+.campos input, select {
     padding: 10px;
     border: solid 2px #333;
     width: 50%;
     font-size: 20px;
     border-radius: 10px;
+}
+
+.campos button {
+    background-color: rgb(230, 128, 140);
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.campos .opciones {
+    width: 20px;
 }
 
 #proyectos {

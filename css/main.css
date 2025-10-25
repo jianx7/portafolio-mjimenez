@@ -117,7 +117,7 @@ p {
 }
 
 .proyecto img {
-    width: 100%;
+    width: 300px;
     border-radius: 6px;
     margin-top: 10px;
 }
@@ -154,12 +154,15 @@ progress {
 footer {
     overflow: hidden;
     padding: 40px 0;
-    background-color: aquamarine;
+    background-color: #8C597C;
     text-align: center;
     border-top: solid 5px #ffffff;
+    
 }
 
-
+footer p {
+    color: #FFEEDD;
+}
 
 
 
@@ -222,7 +225,7 @@ select {
     overflow: hidden;
     margin-top: 20px;
     padding: 20px;
-    border-top: solid 5px rgb(157, 173, 113);
+    border-top: solid 5px #8C597C;
     margin-bottom: 30px;
 }
 

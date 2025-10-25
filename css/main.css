@@ -1,36 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap');
 
 * {
     margin: auto;
+    color: #483129;
 }
 
 body {
-    background-color: rgb(242, 238, 232);
-    font-family: 'Poppins', sans-serif ;
+    background-color: #FFEEDD;
+    font-family: 'Poppins', sans-serif;
 }
 
+/* ENCABEZADO */
 header {
-    background: rgb(227, 135, 146);
+    background: #FFDEC7;
     text-align: center;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px; 
-    border-radius: 25px;
-    border-bottom: solid 5px rgb(186, 88, 100);
+    border-bottom: solid 5px #dac1af;
     padding: 10px;
+
 }
 
+header h1 {
+    font-family: "Tangerine", cursive;
+    font-weight: 10000;
+    font-size: 70px;
+    font-style: bold;
+}
+
+/* MENÚ */
 nav {
-    overflow: hidden;
-    background: rgb(175, 240, 228);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #8C597C;
     margin-top: 5px;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 40px;
+    padding: 30px;
 }
 
+#menu-principal {
+    list-style: none;
+    display: flex;
+}
+
+#menu-principal a {
+    text-decoration: none;
+    color: #FFDEC7;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 8px;
+}
+
+#menu-principal a:hover {
+    color: #ffffff;
+}
+
+/* CONTENIDO PRINCIPAL*/
 main {
     overflow: hidden;
 }
@@ -39,11 +62,89 @@ section {
     overflow: hidden;
 }
 
+#about-me .contenido-about {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+#about-me .texto {
+    flex: 1;
+
+
+}
+
+mark {
+    background-color: #EEA3A1;
+}
+
+#foto-perfil {
+    margin-top: 30px;
+    width: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
 p {
     color: rgb(78, 10, 11);
 }
 
-progress{
+/* Proyectos */
+.proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    min-height: 480px;
+    background-color: #EEA3A1;
+}
+
+.proyecto h3 {
+    font-weight: li;
+}
+
+.proyecto p {
+    text-align: justify;
+    padding: 20px;
+    flex-grow: 1;
+
+}
+
+.proyecto img {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+.proyecto time {
+    margin-top: auto;
+    font-weight: 500;
+}
+
+#proyectos {
+    padding: 20px 30px;
+    border-top: solid 5px #8C597C;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#proyectos > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+    align-items: stretch;
+}
+
+
+/**/
+progress {
     width: 100%;
     height: 25px;
     border-radius: 5px;
@@ -60,35 +161,17 @@ footer {
 
 
 
-.proyecto {
-    float: left;
-    width: 33%;
-    margin-top: 20px;
-}
 
-.proyecto h3{
-    color: rgb(78, 10, 11);
-    font-weight: li;
-}
 
-.proyecto p{
-    text-align: justify;
-    padding: 20px;
-}
-
-.proyecto img {
-    width: 90%;
-    margin-top: 10px;
-}
-
-.lista-tecnologias{
+.lista-tecnologias {
     list-style: none;
     display: flex;
     margin-left: 0;
     gap: 15px;
     padding: 10px;
 }
-.lista-tecnologias li{
+
+.lista-tecnologias li {
     background-color: rgb(186, 88, 100);
     color: #ffffff;
     padding: 10px 20px;
@@ -109,7 +192,8 @@ footer {
     padding-right: 20px;
 }
 
-.campos input, select {
+.campos input,
+select {
     padding: 10px;
     border: solid 2px #333;
     width: 50%;
@@ -130,38 +214,11 @@ footer {
     width: 20px;
 }
 
-#proyectos {
-    padding: 20px 30px;
-    border-top: solid 5px rgb(157, 173, 113);
-    margin-top: 30px;
-    text-align: center;
-}
 
-#menu-principal {
-    list-style: none;
-    display: flex;
-}
 
-#menu-principal a {
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
-    font-weight: bolder;
-    padding: 8px;
-}
 
-#menu-principal a:hover {
-    color: #ffffff;
-    background-color: blueviolet;
-}
 
-#foto-perfil {
-    width: 300px;
-    border-radius: 25px;
-    float: right;
-}
-
-#habilidades{
+#habilidades {
     overflow: hidden;
     margin-top: 20px;
     padding: 20px;
